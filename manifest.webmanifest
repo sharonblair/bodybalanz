@@ -1,0 +1,16 @@
+{
+  "name": "BodyBalanz",
+  "short_name": "BodyBalanz",
+  "description": "Persoonlijke onderhoudsapp. Alle gegevens blijven op je eigen toestel.",
+  "lang": "nl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFF8F1",
+  "theme_color": "#FFF8F1",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
