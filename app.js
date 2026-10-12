@@ -209,7 +209,7 @@ function sel(name, label, opts, val) {
 let toastT;
 function toast(msg) {
   const el = $('#toast'); el.textContent = msg; el.classList.add('show');
-  clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 3400);
+  clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2400);
 }
 
 let sheetDelete = null;
@@ -339,7 +339,7 @@ function vStart() {
   else if (ns) c1 = ['Nieuwe pen', 'Staat klaar', nl(ns.mg) + ' mg'];
   else c1 = ['Voorraad', 'Geen pen', 'Voeg een pen toe'];
   let c2;
-  if (sup && sup.recipe) c2 = ['Recept', sup.recipe <= t ? 'Nu aanvragen' : fmtSmart(sup.recipe), 'Voorraad t/m ' + fmtSmart(sup.last)];
+  if (sup && sup.recipe) c2 = ['Recept', sup.recipe <= t ? 'Nu aanvragen' : fmtSmart(sup.recipe), 'Pen leeg ' + fmtSmart(sup.last)];
   else c2 = ['Recept', 'Onbekend', 'Geen voorraad'];
   const cards = '<div class="grid2"><section class="mini tint-butter"><div class="eyebrow butter-ink">' + c1[0] + '</div><div class="mini-v">' + esc(c1[1]) + '</div><div class="mini-s" style="color:#6B5320">' + esc(c1[2]) + '</div></section>' +
     '<section class="mini tint-blush"><div class="eyebrow blush-ink">' + c2[0] + '</div><div class="mini-v">' + esc(c2[1]) + '</div><div class="mini-s" style="color:#7A3A2F">' + esc(c2[2]) + '</div></section></div>';

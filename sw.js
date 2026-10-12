@@ -1,7 +1,7 @@
 'use strict';
 // Service worker: houdt de app beschikbaar zonder internet.
 // Netwerk eerst, zodat updates direct aankomen. Valt terug op de opgeslagen versie.
-const CACHE = 'bodybalanz-v1';
+const CACHE = 'bodybalanz-v2';
 const FILES = [
   './',
   'index.html',
